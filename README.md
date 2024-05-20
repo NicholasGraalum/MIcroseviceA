@@ -6,21 +6,22 @@
 ### from this system you must use the pipe.txt file to communicate to the data_save.py file
 ### This requires a specific fromat inside of the pipe.txt:
 
-[^1]commands save, load, delete
-[^1]name of file to be or already existing file
-[^1]if the file is save, add as many lines you want to save<>
+<br>commands save, load, delete
+<br>name of file to be or already existing file
+<br>if the file is save, add as many lines you want to save<>
 
-Example of saving:
-save
-gerald
-played a game 
-bought a game
-made a game
+### Example of saving:
+<br>save
+<br>gerald
+<br>played a game 
+<br>bought a game
+<br>made a game
 
-To recieve data from the microservice you must check the resp.txt file.
-When calling the data for loading, it will return it in the format you sent it as, excluding the name and command.
+## To recieve data from the microservice 
+### you must check the resp.txt file.
+### When calling the data for loading, it will return it in the format you sent it as, excluding the name and command.
 
-Example of load response with gerald:
-played a game 
-bought a game
-made a game
+### Example of load response with gerald:
+<br>played a game 
+<br>bought a game
+<br>made a game
