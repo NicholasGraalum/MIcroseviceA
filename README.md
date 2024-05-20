@@ -6,9 +6,9 @@
 ### from this system you must use the pipe.txt file to communicate to the data_save.py file
 ### This requires a specific fromat inside of the pipe.txt:
 
-commands save, load, delete
-name of file to be or already existing file
-if the file is save, add as many lines you want to save<>
+[^1]commands save, load, delete
+[^1]name of file to be or already existing file
+[^1]if the file is save, add as many lines you want to save<>
 
 Example of saving:
 save
