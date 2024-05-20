@@ -2,17 +2,24 @@
 
 ![UML](https://github.com/NicholasGraalum/MIcroseviceA/assets/129789294/d71eceef-db43-4cba-ab6e-16a76a676df3)
 
-For this save data system to work, the person implementing the microservice with have to save send commands through the pipe in a very specific way.
+To request data from this system you must use the pipe.txt file to communicate to the data_save.py file
+This requires a specific fromat inside of the pipe.txt:
 
-Here is the format of the commands:
-'<command>:
- <data name>
- <data if applicable>'
+<command,s save, load, delete>
+<name of file to be or already existing file>
+<if the file is save, add as many lines you want to saave>
 
-there will be 3 commands implemented:
-* Delete: remove the specified <data name>
-* Load: load the specified <data name>
-* Save: save teh specified <data name>
+Example of saving:
+save
+gerald
+played a game 
+bought a game
+made a game
 
-The formatting of the data will be loaded in the same way that it was saved, format and all. Except it will not send the command line through the text file.
-If the data under that name already exists, it will overwrite the previous data
+To recieve data from the microservice you must check the resp.txt file.
+When calling the data for loading, it will return it in the format you sent it as, excluding the name and command.
+
+Example of load response with gerald:
+played a game 
+bought a game
+made a game
